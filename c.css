@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'gry';
+    src: url(Resources/AtariClassic-gry3.ttf);
+}
+@font-face {
+    font-family: 'chunky';
+    src: url(Resources/AtariClassicChunky-PxXP.ttf);
+}
+@font-face {
+    font-family: 'exSmooth';
+    src: url(Resources/AtariClassicExtrasmooth-LxZy.ttf);
+}
+@font-face {
+    font-family: 'smooth';
+    src: url(Resources/AtariClassicSmooth-XzW2.ttf);
+}
+
+body{
+    background: #006363;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+#platform{
+    position: fixed;
+    border: 5px solid;
+    width: 99%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    background: linear-gradient(#0000,transparent,transparent,transparent,black);
+    gap: 1vw;
+}
+#gNum{
+    width: 99%;
+    height: 10%;
+    font-family: gry;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: greenyellow;
+}
+#aNum{
+    border-top: 15px solid #ffffff7a;
+    width: 99%;
+    height: 10%;
+    font-family: gry;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: orangered;
+}
+#bNums{
+    border-top: 15px solid #ffffff7a;
+    overflow: scroll;
+    width: 99%;
+    height: 77%;
+    display: flex;
+    justify-content: center;
+    font-family: gry;
+    color: #181818;
+}
+#bNums::-webkit-scrollbar{
+    display: none;
+}
+
+#difficulty{
+    margin: 0 auto;
+    display: flex;
+    width: 90%;
+    height: 30vh;
+    /* border: 6px solid; */
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 100px;
+    background: #97a2a3a3;
+    top: 110vh;
+    position: relative;
+}
+
+#easy{background: #73ff7f;}
+#normal{background: #ffff73;}
+#hard{background: #ff6868;}
+.difBtn{
+    width:30%;
+    height: 20%;
+    border-radius: 35px;
+    border: none;
+    font-size: 2dvh;
+    cursor: pointer;
+    font-family: chunky;
+    font-weight: 700;
+}
+
+#controlls{
+    margin: 0 auto;
+    display: flex;
+    width: 90%;
+    height: 30vh;
+    /* border: 6px solid; */
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 100px;
+    background: #97a2a3a3;
+    top: 100vh;
+    position: relative;
+}
+#conOne{background: #6ebeff;}
+#conZero{background: #ffb96e;}
+.conBtn{
+    width: 45%;
+    height: 40%;
+    border-radius: 35px;
+    border: none;
+    font-size: 15vw;
+    cursor: pointer;
+    font-family: chunky;
+    font-weight: 700;
+}
